@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>.::-|Ponto|-::.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="índice.png"/>
+
+</head>
+<style>
+    *{
+        border:0px;
+        margin:0px;
+        
+        }
+        
+        body{
+        
+        color:#8b5a00;
+        background-color:#eee8aa;
+        
+        }
+        
+        header{
+            margin-top: 70px;
+        display:flex;
+        flex-flow:column;
+        align-items:center;
+        
+        }
+        
+        .box{
+        padding:39px;
+        width:225px;
+        height:225px;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:50%;
+        background-color:#fafad2;
+        }
+        
+        .box0{
+        
+        position:relative;
+        margin-left:auto;
+        margin-right:auto;
+        }
+        
+        #video{
+          
+            width:225px;
+            height:225px;
+            margin-left:auto;
+            margin-right:auto;
+            border-radius:50%;
+            background-color:#fafad2;
+            
+            }
+            
+   
+</style>
+
+<body>
+    <div class='box'>
+
+        <div class='box0'>
+            <video id="video" autoplay></video>
+        <button class='button'type='submit'>Logar</button>
+        
+        </div>
+        </div>
+   
+<script>
+function startVideoFromCamera(){
+
+    navigator.mediaDevices.getUserMedia({video:true}).then(stream=>{
+
+        const videoElement = document.querySelector("#video")
+        videoElement.srcObject = stream
+    })
+
+}
+window.addEventListener('DOMContentLoaded', startVideoFromCamera)
+</script>
+</body>
+
+</html>
