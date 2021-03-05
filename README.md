@@ -1,5 +1,5 @@
 # Pontoweb
-Gerenciamento de carga horaria de funcionarios e colaboraderes.<br>
+Gerenciamento de carga horaria dos colaboraderes.<br>
   
   <p>Colaborador:<br>
 Pablo Rodrigues.</p>
